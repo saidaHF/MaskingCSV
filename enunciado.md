@@ -7,12 +7,14 @@ Ejemplo:
 El mismo proceso de masking se utilizará en un futuro para aplicarlo sobre tablas de una base de datos. Cuanto más reutilizable sea, mejor.
 
 Bonus:
+
 * Crear un informe en el que se muestre, por consola:
     * Longitud media, máxima y mínima del campo Nombre
     * Valor medio, máximo y mínimo del campo Facturación
 * Pruebas unitarias.
 
 Notas:
+
 * Es muy importante la calidad del código.
 * No utilizar ninguna dependencia.
 * Escribir un readme.md con las instrucciones de ejecución
