@@ -16,7 +16,7 @@ Bonus:
 Notas:
 
 * Es muy importante la calidad del código.
-* No utilizar ninguna dependencia.
+* No utilizar ninguna dependencia externa más allá de lo que de por defecto el entorno de ejecución.
 * Escribir un readme.md con las instrucciones de ejecución
 
 
