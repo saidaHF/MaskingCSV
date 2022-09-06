@@ -20,8 +20,19 @@ class TestDataMasking(TestCase):
     def test_write_csv(self):
         self.fail()
 
-    def test_replace_letters(self):
-        self.fail()
+    def test_replace_letters_name(self):
+        expected = "XXXXXX XXXX"
+        nameTest = "Javier Cruz"
+        self.check_letters(expected, nameTest)
+
+    def test_replace_letters_email(self):
+        expected = "XXXXXXX-XXXXXX@XXXX-XXXXXX.XXX"
+        emailTest = "gerardo-puente@mail-sample.com"
+        self.check_letters(expected, emailTest)
+
+    def check_letters(self, expected, value):
+        result = dm.replaceLetters(self, value)
+        assert result == expected
 
     def test_read_file_csv(self):
         self.fail()
