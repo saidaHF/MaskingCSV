@@ -20,7 +20,7 @@ class DataMasking:
         positionColumnName = CSVData[0].index("Nombre")
         positionColumnEmail = CSVData[0].index("Email")
         positionColumnInvoiced = CSVData[0].index("Facturado")
-        positionColumnLocation = CSVData[0].index("Pais")
+        positionColumnCountry = CSVData[0].index("Pais")
 
         for i in range(1, len(CSVData)):
             CSVDataRow = []
@@ -28,7 +28,7 @@ class DataMasking:
             name = CSVData[i][positionColumnName].strip()
             email = CSVData[i][positionColumnEmail].strip()
             invoiced = CSVData[i][positionColumnInvoiced].strip()
-            location = CSVData[i][positionColumnLocation].strip()
+            country = CSVData[i][positionColumnCountry].strip()
 
             if id != "":
                 CSVDataRow.append(id)
@@ -41,8 +41,8 @@ class DataMasking:
             if invoiced != "":
                 newInvoiced = self.averageInvoiced(CSVData)
                 CSVDataRow.append(newInvoiced)
-            if location != "":
-                CSVDataRow.append(location)
+            if country != "":
+                CSVDataRow.append(country)
 
             CSVDataNew.append(CSVDataRow)
 
