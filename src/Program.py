@@ -20,7 +20,7 @@ class DataMasking:
         positionColumnName = CSVData[0].index("Nombre")
         positionColumnEmail = CSVData[0].index("Email")
         positionColumnInvoiced = CSVData[0].index("Facturado")
-        positionColumnLocation = CSVData[0].index("Localidad")
+        positionColumnLocation = CSVData[0].index("Pais")
 
         for i in range(1, len(CSVData)):
             CSVDataRow = []
