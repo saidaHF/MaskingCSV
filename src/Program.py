@@ -9,7 +9,6 @@ class DataMasking:
 
     def loadProgram(self):
         listNewData = self.processCSV(self.CSVDataClients)
-        # print(listNewData)
         self.writeCSV(listNewData)
 
     def processCSV(self, CSVData):
@@ -50,7 +49,6 @@ class DataMasking:
         return CSVDataNew
 
     def averageInvoiced(self, CSVData):
-        # average = 25.100,0675
         count = 0.0
         totalInvoiced = 0.0
         positionColumnInvoiced = CSVData[0].index("Facturado")
